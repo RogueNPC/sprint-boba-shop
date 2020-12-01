@@ -2,13 +2,17 @@
 
 <!-- Active navbar -->
 {% block navbar %}
+
 <a class="nav-item nav-link active" href="/">Home</a><span class="sr-only">(current)</span>
 <a class="nav-item nav-link" href="/about">About</a>
 <a class="nav-item nav-link" href="/menu">Menu</a>
 <a class="nav-item nav-link" href="/contact">Contact</a>
+
 {% endblock navbar %}
 
 {% block content %}
+
+<!-- Carousel Jumbotron -->
 <section class="jumbotron text-center hero-background-img">
     <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -33,6 +37,36 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
+</section>
+
+<!-- Some info cards -->
+<section class="container mb-5 mt-5 pb-5 pt-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h2>START ORDERING</h2>
+                    <p>Take a look at our selective menu with your health and wellness in mind!</p>
+                    <a class="more-details" href="/menu">More Details</a>
+                </div>
+                <div>
+                    <img src="../static/images/boba-icon.jpg" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h2>GET IN TOUCH</h2>
+                    <p>Find out how you can order your own boba/bubble tea now!</p>
+                    <a class="more-details" href="/contact">More Details</a>
+                </div>
+                <div>
+                    <img src="../static/images/location-icon1.png" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
